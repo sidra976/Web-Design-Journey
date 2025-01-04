@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            background-color: #676279;
+            overflow: hidden;
+        }
+        .box{
+            border: 1px solid;
+            height: 500px;
+            width: 860px;
+            margin-top: 2%;
+            margin-left: 15%;
+            border-radius: 16px;
+            background-color: #2b2738;    
+            overflow: hidden;   
+            display: flex; 
+        }
+        #img{
+            max-height: 475px;
+            width: 400px;
+            position: relative;
+            top: 40px;
+            left: 210px;
+            bottom: -20px;
+            position: absolute;
+            border-radius: 13px;
+            overflow: hidden; 
+            float: left;  
+        }
+        .textbox span{
+            position: absolute;
+            position: relative;
+            left: 30px;
+            top: 30px;
+            display: inline;
+        }
+        .textbox a{
+            font-size: 10px;
+            font-family: 'Segoe UI';
+            text-decoration: none;
+            position: relative;
+            left: 490px;
+            color: white;
+            background-color: rgba(129,120,176,255);
+            padding: 4px 10px;
+            border-radius: 17px;
+            top: 55px;
+            position: fixed;
+        }
+       
+        .textbox p{
+            position: relative;
+            font-family: 'Segoe UI';
+            color: rgba(255, 255, 255, 0.897);
+            font-size: 20px;
+            font-weight:410;
+            top:370px;
+            left: 320px;
+            position: absolute;
+          
+        }
+        
+        #dash{
+            position: relative;
+            top: 450px;
+            left: 380px;
+            position: absolute;
+            color: rgba(255, 255, 255, 0.711);
+            cursor: pointer;
+            font-weight: bold;     
+        }
+        
+        .form h1{
+            position: relative;
+            left: 720px;
+            font-family: 'Segoe UI';
+            font-weight: 400;
+            top: 40px;
+            color: rgba(255, 255, 255, 0.946);
+            position: absolute;
+        }    
+        .form p{
+             position: relative;
+             left: 724px;
+             top: 99px;
+             font-weight: 250;
+             font-family: sans-serif;
+             font-size: 12px;
+             position: absolute;
+             color: hsla(0, 0%, 100%, 0.509)
+        }  
+        .form a{
+            color: #9d8ccb;
+            font-family: sans-serif;
+        }
+        .form form{
+            position: absolute;
+            left: 710px;
+            top: 160px;
+             
+        }
+        .form .textinput{
+           height: 25px;
+           width: 124px;
+           margin-left: 7px;
+           margin-top: 10px;
+           background-color: #3b364c; 
+           text-decoration: none;
+           border: none;
+        }
+        input{
+            padding-left: 13px;
+            text-indent: 0;
+            color: rgba(255, 255, 255, 0.896);
+        }
+        input::placeholder{
+            text-indent: 10px;
+        }
+        .textinput:active {
+         border-color: #00698f; /* or any other color */
+         }
+
+        input[type="checkbox"]:checked{
+            accent-color: white;
+            height: 14px;
+            width: 17px;
+            background-color: white;
+        }
+        #bigtext1{
+            width: 275px;
+        }
+        #bigtext2{
+            width: 275px;
+        }
+       .form label{
+          margin-left: 7px;
+          color: rgba(240, 248, 255, 0.692);
+          font-size: 13px;
+       }
+       .form button{
+        height: 34px;
+        width: 290px;
+        padding: 8px 10px;
+        margin-left: 13px;
+        margin-top: 30px;
+        background-color: #6e54b5;
+        border-radius: 5px;
+        color: rgba(255, 255, 255, 0.939);
+        border: none;
+        cursor: pointer;
+       }
+       .form h4{
+        color: rgba(255, 255, 255, 0.381);
+        font-weight: 200;
+        position: relative;
+        left: 725px;
+        top: 370px;
+        position: absolute;
+        font-size: 12px;
+       
+       }
+       .form h4::before{
+        content: "━━━━━━━━━";
+         
+       } 
+       .form h4::after{
+        content: "━━━━━━━━━";
+       } 
+       #logo1{
+        height: 34px;
+        width: 140px;
+        padding: 8px 10px;
+        margin-left: 13px;
+        margin-top: 30px;
+        background-color: #2b2738;    
+        border-radius: 5px;
+        color: rgba(255, 255, 255, 0.704);
+        border: 1px solid rgba(255, 255, 255, 0.869);
+        text-align: center;
+        cursor: pointer;
+       }
+       #logo2{
+        height: 34px;
+        width: 140px;
+        padding: 8px 10px;
+        margin-left: 13px;
+        margin-top: 30px;
+        background-color: #2b2738;    
+        border-radius: 5px;
+        color: rgba(255, 255, 255, 0.704);
+        border: 1px solid rgba(255, 255, 255, 0.869);
+        text-align: center;
+        cursor: pointer;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="box"> 
+      <div id="img">
+        <img src="moun.jpg" height="475px" style="border-radius: 13px;">        
+      </div> 
+      <div class="textbox">
+        <span><img src="logo.png" alt="" width="49px">
+    <a href="">Back to website ➤</a></span>
+      <p>Capturing Moments, <br> Creating Memories </p>
+      <span id="dash">━ ━ ━</span></span> 
+      </div>
+        <div class="form">
+            <h1>Create an account</h1>
+             <p>Already have an account? <span><a href="">Log in</a></span></p>
+             <form action="">
+                <input type="text" class="textinput" placeholder="First name">
+                <input type="text" class="textinput" placeholder="Last name"> <br>
+                <input type="email" class="textinput" id="bigtext1" placeholder="Email"> <br>
+                <input type="password" class="textinput" id="bigtext2" placeholder="Enter your password"> <br> <br>
+                <label>
+                    <input type="checkbox" id="checkbox_id" name="checkbox_name">
+                     I agree to the <a href="">Terms & Conditions</a>
+                  </label> <br>
+                  <button>Create account</button> <br> <br>
+                  <button id="logo1"><img src="google_logo.png" alt="" height="16px"> <span style="margin-left: 4px; color: rgba(255, 255, 255, 0.926);">Google</span></button>
+                  <button id="logo2"><img src="apple_logo.png" alt="" height="16px"> <span style="margin-left: 4px; color: rgba(255, 255, 255, 0.926);">Apple</span></button>
+                  
+                  
+    
+             </form>
+             <h4>Or registor with</h4>
+             
+        </div>
+    </div>
+</body>
+</html>
