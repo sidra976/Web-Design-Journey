@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox UI</title>
+    <style>
+        body{
+            background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        }
+        .container{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            gap: 22px;
+        }
+        .box{
+            height: 420px;
+            width: 300px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 8px 8px 35px #4a4a98;
+           
+        }
+        .box header{
+            height: 165px;
+            overflow: hidden;
+        }
+        .box main{
+            /*transform: translate(40px, 0px);    */
+            text-align: center;   
+        } 
+        .box p{
+           margin-left: 10px;
+           cursor: pointer;
+        }
+        button{
+            height: 35px;
+            width: 110px;
+            border-radius: 20px;
+            background-image: linear-gradient(to top, #30cfd0 0%, #562e86 100%);
+            cursor: pointer;
+        }
+        h3{
+            color: gray;
+        }
+        .box p:hover{
+            color: #562e86;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">
+            <header><img src="mountain card.jpg" alt="" height="195px"></header>
+            <main>
+                <div><h3>Travel</h3></div>
+                <div><h1>Mountains</h1></div>
+                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic suscipit possimus dolores exercitationem blanditiis </p></div>
+                <button>Readmore</button>
+            </main>
+        </div>
+        <div class="box box-2">
+            <header><img src="city.jpg" alt="" height="195px"></header>
+            <main>
+            <div><h3>Travel</h3></div>
+                <div><h1>City</h1></div>
+                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic suscipit possimus dolores exercitationem blanditiis </p></div>
+                <button>Readmore</button>
+            </main>
+        </div>
+        <div class="box box-3">
+            <header><img src="coast.jpg" alt="" height="200px"></header>
+            <main>
+            <div><h3>Travel</h3></div>
+                <div><h1>Coast</h1></div>
+                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic suscipit possimus dolores exercitationem blanditiis </p></div>
+                <button>Readmore</button>
+            </main>    
+        </div>
+
+    </div>
+</body>
+</html>
