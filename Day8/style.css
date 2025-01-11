@@ -1,0 +1,110 @@
+body{
+    overflow: hidden;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+ }
+
+ .conatiner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+} 
+.box{
+    height: 500px;
+    width: 900px;
+    background-image: url(pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 5px white, 0 0 15px white;
+}
+.header{
+    display: flex;
+    
+} 
+.header h1{
+    position: fixed;
+    left: 18%;
+    color: white;
+    font-size: 10px;
+    top: 12.2%;
+    font-weight: 800px;
+    text-decoration: none;
+text-shadow: 0 0 7px white,
+0 0 10px white;
+}
+.header nav{
+position: fixed;
+top: 12.4%;
+left: 32%;
+}
+.header button{
+position: fixed;
+top: 12.4%;
+left: 75%;
+}
+.header a{
+margin-left: 85px;
+color: rgba(255, 255, 255, 0.896);
+text-decoration: none;
+text-shadow: 0 0 7px white,
+0 0 10px white;
+}
+.main{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 12%;
+color: white;
+
+}
+.main #span{
+font-size: 70px;
+font-family: "Orbitron", serif;
+font-weight: 1000;    
+margin-left: -30px;
+}
+#textShadow{
+text-shadow: 2px 5px 5px purple,
+2px 5px 10px purple;
+}
+.heading{
+font-size: 18px;
+}
+#desc{
+position: relative;
+font-size: 14px;
+top: 10px;
+color: rgba(255, 255, 255, 0.773);
+}
+.footer{
+position: relative;
+left: 40%;
+top: -3%;
+}
+.bingo{
+font-family: "Orbitron", serif;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;
+font-style: italic;
+}
+button{
+
+color: white;
+border: 1px solid white;
+background: #c592ec25;
+backdrop-filter: blur(30px);
+padding: 5px 20px;
+border-radius: 10px;
+box-shadow: 0 0 5px white, 0 0 10px white;
+
+}
+.btn{
+ position: relative;   
+ right: 5%;  
+margin-right: 20px;
+margin-top: 3%;
+font-family: serif;
+}
