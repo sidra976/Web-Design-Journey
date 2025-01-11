@@ -14,7 +14,7 @@ body{
 .box{
     height: 500px;
     width: 900px;
-    background-image: url(pic.jpg);
+    background-image: url(Images/pic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 0 5px white, 0 0 15px white;
