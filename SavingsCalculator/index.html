@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saving Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home">
+        <div class="content">
+            <h1 id="h1">Saving Calculator</h1>
+            <p>Estimate your investment growth over time</p>
+        </div>
+        <div class="card">
+            <div class="left">
+                <img src="card.png" alt="">
+                <h3>END BALANCE:</h3>
+                <div id="resultBox">
+                    <h1 id="res">$0.00</h1>
+                </div>
+            </div>
+            <div class="lineBarrier"></div>
+            <div class="right">
+                <div class="btnBox">
+                    <button class="custom-btn currency-btn" data-currency="EUR">EUR</button>
+                    <button class="custom-btn currency-btn" data-currency="USD">USD</button>
+                    <button class="custom-btn currency-btn" data-currency="UAH">UAH</button>
+                </div>
+                <div class="inputBox">
+                    <h6>STARTING BALANCE*:</h6> 
+                    <input type="text" placeholder="Enter amount" id="startingBalance" class="inputText">
+                    <h6>MONTHLY CONTRIBUTION:</h6>
+                    <input type="text" placeholder="Enter rate" id="monthlyContribution" class="inputText">
+                    <h6>PERIOD:</h6>
+                    <input type="text" placeholder="Enter period" id="period" class="inputText">
+                    <br>
+                    <div class="radioBox">
+                        <input type="radio" name="period" id="years" class="radContent" checked>
+                        <label for="years">YEARS</label>
+                        <input type="radio" name="period" id="months" class="radContent">
+                        <label for="months">MONTHS</label>
+                    </div>
+                    <h6>ANNUAL INTEREST:</h6>
+                    <input type="text" placeholder="Enter rate" id="annualInterest" class="inputText">
+                </div>
+                <button id="btn">Calculate</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

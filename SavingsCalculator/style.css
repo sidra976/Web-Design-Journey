@@ -1,0 +1,245 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.home{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #F6F5F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+    gap: 1vw;   
+}
+.home h1{
+    color: #13547a;
+}
+#h1{
+    animation: slideLeft 1s ease;
+}
+@keyframes slideLeft {
+    from{transform: translateX(300px);}
+}
+
+.home p{
+    background: #CB60B3;
+background: linear-gradient(to right, #CB60B3 0%, #C146A1 50%, #A80077 51%, #DB36A4 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: slideUpImg 1s ease;
+}
+.card{
+    height: 88%;
+    width: 60%;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+              -2px -2px 12px rgba(255, 255, 255, 0.5),
+              inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+              2px 2px 8px rgba(0, 0, 0, .3);
+  background-color: #ecf0f3;
+
+    
+}
+.left{
+    height: 100%;
+    width: 55%;
+    background-color: #F5F4F7;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.left img{
+    height: 70%;
+    margin-top: 7%;
+    margin-left: 25%;   
+    animation: slideUpImg 1s ease;
+}
+@keyframes slideUpImg {
+    From{transform: translateY(20%);}
+}
+.left h3{
+    margin-left: 40%;
+    background: #CB60B3;
+    background: linear-gradient(to right, #CB60B3 0%, #C146A1 50%, #A80077 51%, #DB36A4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideLeft 1s ease;
+}
+@keyframes slideUp {
+    From{transform: translateY(80%);}
+}
+.left h1{   
+    margin-left: 35%;
+    font-size: 3vw;
+    color: #13547a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1),
+                 -2px -2px 4px rgba(255, 255, 255, 0.7);
+    width: 50%;       
+    text-align: center;   
+    animation: slideUp 1s ease;    
+}
+.lineBarrier {
+    margin-top: 3%;
+    height: 90%;
+    width: 3px;
+    background-color: #ecf0f3;
+    border-radius: 10px;
+    box-shadow: inset -4px -4px 12px rgba(255, 255, 255, 1),
+                inset -4px -4px 16px rgba(255, 255, 255, 0.5),
+                inset 4px 4px 12px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+    }
+.right{
+    height: 100%;
+    width: 45%;
+    margin-left: 6%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.right .btnBox{
+    height: 2%;
+    width: 70%;
+    margin-top: 10%;
+    display: flex;  
+    align-items: center;
+    border-radius: 20%;  
+}
+.right .btnBox .custom-btn {
+    padding: 5px 18px;
+    border: none;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+                            -2px -2px 12px rgba(255, 255, 255, 0.5),
+                            inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+                            2px 2px 8px rgba(0, 0, 0, .3);
+    color: #ADB1B2;
+    font-size: 15px;
+    background-color: #F6F5F8;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.right .btnBox .custom-btn:hover {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);   
+    transform: translateY(-2px);
+    box-shadow: -2px -2px 8px rgb(243, 239, 240),
+                            -2px -2px 12px rgba(163, 154, 158, 0.5),
+                            2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: black;     
+    border-radius: 10%;                   
+                        
+}
+
+.custom-btn:active {
+    transform: translateY(2px);
+    box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+                            inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+                            inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+                            inset 2px 2px 8px rgba(0, 0, 0, .3);
+}
+.right .inputBox{
+    margin-top: 1.8vw;
+    
+}
+.inputText{
+    -webkit-appearance: none;
+  appearance: none;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+              inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+              inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+              inset 2px 2px 8px rgba(0, 0, 0, .3);
+  background-color: #ecf0f3;
+  font-size: 1rem;
+  outline: none;
+  
+  margin-top: 4%;
+}
+h6{
+    margin-top: 4%;
+}
+label{
+    font-size: 0.5rem;
+}
+.radContent{
+    appearance: none; 
+    width: 13px;
+    height: 13px;
+    border-radius:  50%;
+    border: 5px solid #ccc;
+    cursor: pointer;   
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+              inset -2px -2px 12px rgba(85, 23, 23, 0.5),
+              inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+              inset 2px 2px 8px rgba(0, 0, 0, .3);
+}
+.radContent {
+    transition: all 0.3s ease;
+    
+}
+
+.radContent:checked {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    border-color: #13547a;
+    box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+                inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+                inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+                inset 2px 2px 8px rgba(0, 0, 0, .3);
+    transform: scale(1.1);
+}
+.radContent:checked {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    border-color: #13547a;
+  }
+  
+.radioBox{
+    display: flex;
+    gap: 2.4vw;
+    margin-top: 2%;    
+}
+#btn{
+    margin-top: 5%;
+    padding: 12px 80px;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+                -2px -2px 12px rgba(255, 255, 255, 0.5),
+                2px 2px 8px rgba(0, 0, 0, .3);
+    background-color: #ecf0f3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#btn:hover {
+    transform: translateY(-2px);
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+                -2px -2px 12px rgba(255, 255, 255, 0.5),
+                2px 2px 4px rgba(0, 0, 0, .3);
+}
+
+#btn:active {
+    transform: translateY(2px);
+    box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+                inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+                inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+                inset 2px 2px 8px rgba(0, 0, 0, .3);
+}
+
+
+::placeholder{
+    color: #ADB1B2;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}   
+
